@@ -45,7 +45,7 @@ public class Enemy : MonoBehaviour
             direction.Normalize();
             movement = direction;
         }
-        if (targetDis <= 0.6f)
+        if (targetDis <= 0.5f)
         {
             Vector2 direction = player.position - transform.position;
             float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
