@@ -14,10 +14,10 @@ public class Knockback : MonoBehaviour
     {
         if (other.gameObject.tag == ("Player"))
         {
-            Knockbac();
+            Push();
         }
     }
-  void Knockbac()
+  void Push()
     {
         float targetDis = Vector2.Distance(transform.position, enemy.position);
 
